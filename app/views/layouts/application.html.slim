@@ -11,4 +11,6 @@ html
     .app-title.navbar.nevber-expand-md.nevbar-light.bg-light 
       .navbar-brand Tasllist 
     .container
+      -if flash.notice.present?
+        .alert.alert-success= flash.notice
       = yield
